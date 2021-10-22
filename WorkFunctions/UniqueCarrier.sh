@@ -2,12 +2,16 @@
 
 UniqueCarrier(){
 	
-	echo "Bem vindo ao setor de $option_selected!!"
-	sleep  1
+	section_welcome_msg
+	echo "==================================================================="
 	read -p "	Sobre qual companhia gostaria de obter informações: " company
-    echo "  Para saber o tempo de atraso total dos vôos da $company digeite 1." 
-    echo "  Para saber o total de atrasos da $company digeite 2."
-	read -p "	Ou teclea qualquer tecla para continuar." option
+	echo "=================================================================="
+	echo "=================================================================="
+    echo "	Para saber o tempo de atraso total dos vôos da $company digeite 1." 
+    echo "	Para saber o total de atrasos da $company digeite 2."
+	echo "	Ou teclea qualquer tecla para continuar." 
+	echo "=================================================================="
+	read option
 
 	case $option in
 		1)
@@ -20,8 +24,7 @@ UniqueCarrier(){
             total_flight_delay_apresentation
             ;;
 		*)
-			echo "Ainda não possuimos essa funcionalidade. Aperte qualquer tecla para continuar."
-			read
+			no_function_msg
 			;;
 	esac
 	

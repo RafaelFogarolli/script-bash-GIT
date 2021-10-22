@@ -3,11 +3,13 @@
 
 AirTime(){
 	
-	echo "Bem vindo ao setor de $option_selected!!"
-	sleep  1
+	section_welcome_msg
+	echo "=================================================================="
 	echo "	Para descobrir o vôo com maior tempo de duração digite 1." 
 	echo "	Para descobrir o vôo com menor tempo de duração digite 2."
-	read -p "	Ou teclea qualquer tecla para continuar." option
+	echo "	Ou teclea qualquer tecla para continuar."
+	echo "==================================================================" 
+	read option
 	
 
 	case $option in
@@ -20,8 +22,8 @@ AirTime(){
 			selected_option_apresentation_case01
 			;;
 		*)
-			echo "Ainda não possuimos essa funcionalidade. Aperte qualquer tecla para continuar."
-			read
+			
+			no_function_msg
 			;;
 	esac
 

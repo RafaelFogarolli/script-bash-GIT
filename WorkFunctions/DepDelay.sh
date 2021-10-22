@@ -3,12 +3,14 @@
 
 DepDelay(){
 	
-	echo "Bem vindo ao setor de $option_selected!!"
-	sleep  1
+	section_welcome_msg
+	echo "=================================================================="
 	echo "	Para descobrir o vôo com maior atraso na saída digite 1." 
 	echo "	Para descobrir o vôo com menor atraso na saída digite 2."
 	echo "	Para descobrir o tempo total de atraso nas saídas de algum aeroporto digite 3."
-	read -p "	Ou teclea qualquer tecla para continuar." option
+	echo "	Ou teclea qualquer tecla para continuar." 
+	echo "=================================================================="
+	read option
 
 
 	case $option in
@@ -28,8 +30,7 @@ DepDelay(){
 
 			;;
 		*)
-			echo "Ainda não possuimos essa funcionalidade. Aperte qualquer tecla para continuar."
-			read
+			no_function_msg
 			;;
 	esac
 	

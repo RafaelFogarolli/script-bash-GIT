@@ -11,7 +11,9 @@ msg_options(){
     echo "================================================================="
     echo "======== Digite 01 para receber a sorte do dia.          ========"
     echo "======== Digite 02 para saber informações sobre os vôos. ========"
-    read -p "======== Digite qualquer tecla para sair.                ======>>" selection
+    echo "======== Digite qualquer tecla para sair.                ========" 
+	echo "=================================================================" 
+	read selection
     echo -e "\n\n\n"
 
 }
@@ -19,8 +21,7 @@ msg_options(){
 msg_welcome(){
 
     figlet ========
-	echo "  Iremos te apresentar as sessões disponíveis."
-	echo "  Pressione qualquer tecla para continuar."
+	cowsay -f vader Iremos te apresentar as sessões disponíveis.  Pressione qualquer tecla para continuar.
     figlet ========
 	read
     echo -e "\n\n\n\n"
@@ -40,10 +41,8 @@ msg_sections(){
 }
 
 option_selected_msg(){
-    echo "====================================================================="
-    echo "======== Ah, você deseja informações sobre $option_selected.         ========"
-	echo "======== Vou te encaminhar para o setor resposável. Aguarde. ========" 
-    echo "====================================================================="
+    
+	cowsay -f luke-koala Ah, você deseja informações sobre $option_selected. Vou te encaminhar para o setor resposável. Aguarde. 
 	echo -e "\n\n\n\n\n\n\n\n\n\n"
 	sleep 2
 }
@@ -74,15 +73,31 @@ selected_option_apresentation_case01(){
 	read
 }
 
+no_function_msg(){
+	cowsay -f koala Ainda não possuimos essa funcionalidade. Aperte qualquer tecla para continuar.
+	read
+
+}
+
+section_welcome_msg(){
+	figlet =========
+	figlet Bem Vindo 
+	echo -e "\n\n"
+	figlet  $option_selected
+	figlet =========
+	echo -e "\n\n\n\n"
+	sleep  1
+}
+
 awaiting_information_msg(){
 	
-	echo "As informações selecionadas estão sendo carregadas. Aguarde"
+	cowsay As informações selecionadas estão sendo carregadas. Aguarde
 	echo -e "\n\n\n"
 	sleep 2
 }
 
 continue_msg(){
-	echo -e "\n\n\nAperte qualquer tecla para continuar"
+	cowsay Aperte qualquer tecla para continuar
 	read
 }
 

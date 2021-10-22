@@ -3,10 +3,13 @@
 
 Diverted(){
 	
-	echo "Bem vindo ao setor de $option_selected!!"
-	sleep  1
+	section_welcome_msg
+	echo "=================================================================="
 	echo "	Para descobrir quantos vôos precisaram ser redirecionados digite 1." 
-	read -p "	Ou teclea qualquer tecla para continuar." option
+	echo "	Ou teclea qualquer tecla para continuar." 
+	echo "=================================================================="
+	read option
+	
 
 	case $option in
 		1)
@@ -14,8 +17,7 @@ Diverted(){
 			total_diverted_apresentation
 			;;
 		*)
-			echo "Ainda não possuimos essa funcionalidade. Aperte qualquer tecla para continuar."
-			read
+			no_function_msg
 			;;
 	esac
 	
