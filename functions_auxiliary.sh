@@ -62,8 +62,7 @@ selected_option(){
 			no_function
 			;;
 		9)
-			no_function
-			#UniqueCarrier
+			UniqueCarrier
 			;;
 		10)
 			no_function
@@ -82,12 +81,10 @@ selected_option(){
 			#AirTime
 			;;
 		15)
-			no_function
-			#ArrDelay
+			ArrDelay
 			;;
 		16)
-			no_function
-			#DepDelay
+			DepDelay
 			;;
 		17)
 			no_function
@@ -111,8 +108,7 @@ selected_option(){
 			no_function
 			;;
 		24)
-			no_function
-			#Diverted
+			Diverted
 			;;
 		25)
 			no_function
