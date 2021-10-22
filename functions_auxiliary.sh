@@ -77,8 +77,7 @@ selected_option(){
 			no_function
 			;;
 		14)
-			no_function
-			#AirTime
+			AirTime
 			;;
 		15)
 			ArrDelay
