@@ -3,10 +3,10 @@
 msg_options(){
     clear
 
-    figlet ========= 
+	figlet ========= 
 	figlet Bem vindo 
-    figlet =========
-
+	echo "				by: Rafael e Gabriel"
+	figlet =========
     echo -e "\n\n"
     echo "================================================================="
     echo "======== Digite 01 para receber a sorte do dia.          ========"
