@@ -40,41 +40,8 @@ selected_option(){
 		1)
 			no_function
 			;;
-		2)
-			no_function
-			;;
-		3)
-			no_function
-			;;
-		4)
-			no_function
-			;;
-		5)
-			no_function
-			;;
-		6)
-			no_function
-			;;
-		7)
-			no_function
-			;;
-		8)
-			no_function
-			;;
 		9)
 			UniqueCarrier
-			;;
-		10)
-			no_function
-			;;
-		11)
-			no_function
-			;;
-		12)
-			no_function
-			;;
-		13)
-			no_function
 			;;
 		14)
 			AirTime
@@ -85,46 +52,10 @@ selected_option(){
 		16)
 			DepDelay
 			;;
-		17)
-			no_function
-			;;
-		18)
-			no_function
-			;;
-		19)
-			no_function
-			;;
-		20)
-			no_function
-			;;
-		21)
-			no_function
-			;;
-		22)
-			no_function
-			;;
-		23)
-			no_function
-			;;
 		24)
 			Diverted
 			;;
-		25)
-			no_function
-			;;
-		26)
-			no_function
-			;;
-		27)
-			no_function
-			;;
-		28)
-			no_function
-			;;
-		29)
-			no_function
-			;;
-		*) 
+		*)
 			cowsay Opção inválida. Tente novamente
 			;;
 
